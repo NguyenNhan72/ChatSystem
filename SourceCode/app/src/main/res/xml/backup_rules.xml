@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Loai tru cac file chua token, mat khau va database chat khoi auto backup tren Android cu -->
+    <exclude domain="sharedpref" path="session.xml" />
+    <exclude domain="sharedpref" path="guest.xml" />
+    <exclude domain="database" path="chat.db" />
+</full-backup-content>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Loai tru cac file chua token, mat khau va database chat khoi sao luu dam may -->
+        <exclude domain="sharedpref" path="session.xml" />
+        <exclude domain="sharedpref" path="guest.xml" />
+        <exclude domain="database" path="chat.db" />
+    </cloud-backup>
+    <device-transfer>
+        <!-- Loai tru khi truyen du lieu giua cac thiet bi -->
+        <exclude domain="sharedpref" path="session.xml" />
+        <exclude domain="sharedpref" path="guest.xml" />
+        <exclude domain="database" path="chat.db" />
+    </device-transfer>
+</data-extraction-rules>

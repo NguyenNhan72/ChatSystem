@@ -1,0 +1,45 @@
+# Built application files and caches
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Gradle files & caches
+.gradle/
+**/build/
+build/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local configuration file (sdk.dir, etc.)
+local.properties
+**/local.properties
+
+# Log files
+*.log
+
+# Android Studio / IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+
+# Office temporary files
+~$*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Secrets, API Keys & Credentials
+*google-services.json
+*firebase-adminsdk*.json
+*service-account*.json
+*.keystore
+*.jks
+.env
+*.env
+*.pem
+*.key
+*.p12

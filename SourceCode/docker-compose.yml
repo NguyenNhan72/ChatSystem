@@ -1,0 +1,21 @@
+# PostgreSQL cho chat server. Dung cong 5433 tren host vi cong 5432 co the da bi chiem.
+# Schema duoc server tu dong khoi tao khi chay (server/src/main/resources/schema.sql).
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: mobilechat-postgres
+    environment:
+      POSTGRES_DB: chat
+      POSTGRES_USER: chat
+      POSTGRES_PASSWORD: chat
+    ports:
+      - "5433:5432"
+    volumes:
+      - mobilechat-pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chat -d chat"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  mobilechat-pg:
